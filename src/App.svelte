@@ -1,30 +1,26 @@
 <script lang="ts">
-	export let name: string;
+    import { Router, Route, Link } from "svelte-routing";
+    import PersonalFinance from "./view/Personal_finance.svelte";
+
+   
+    const toast_options = {
+        intro: { y: -20 }
+    }
+
+    export let url = ""; //This property is necessary declare to avoid ignore the Router
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
-
-<style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
-</style>
+<Router url="{url}">
+    <div>
+        <Route path=""> <PersonalFinance /> </Route>
+        <Route path="profile"> <PersonalFinance /> </Route>
+        
+        <!--for now the router just support case sensitive,
+            one workaround colud be add two time the route
+            Example.
+            <Route path="About" component="{About}" /> 
+        -->
+    </div>
+</Router>
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />

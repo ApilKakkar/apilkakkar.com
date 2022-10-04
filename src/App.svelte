@@ -1,14 +1,16 @@
 <script lang="ts">
     import { Router, Route, Link } from "svelte-routing";
     import PersonalFinance from "./view/Personal_finance.svelte";
+    import Threejsjourney from "./view/Threejsjourney.svelte";
 
     export let url = ""; //This property is necessary declare to avoid ignore the Router
 </script>
 
 <Router url="{url}">
     <div>
-        <Route path=""> <PersonalFinance /> </Route>
+        <Route path=""> <Threejsjourney /> </Route>
         <Route path="profile"> <PersonalFinance /> </Route>
+        <Route path="three"> <Threejsjourney /> </Route>
         
         <!--for now the router just support case sensitive,
             one workaround colud be add two time the route

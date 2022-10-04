@@ -2,11 +2,6 @@
     import { Router, Route, Link } from "svelte-routing";
     import PersonalFinance from "./view/Personal_finance.svelte";
 
-   
-    const toast_options = {
-        intro: { y: -20 }
-    }
-
     export let url = ""; //This property is necessary declare to avoid ignore the Router
 </script>
 

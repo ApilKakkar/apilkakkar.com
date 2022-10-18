@@ -72,6 +72,50 @@
         </div>
         <div class="col-2"></div>
     </div>
+
+
+
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8 notes d-flex">
+            <ul>
+                <li>
+                    Three js works with webgl it uses GPU to render.
+                </li>
+                <li>
+                    Triangles &lt;= Shaders        
+                </li> 
+                <li>
+                    github || mrdoob || three js docs
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    can work with SVG,CSS these two are limited not covered in this course.
+                </li> 
+            </ul>
+        </div>
+        <div class="col-2"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8 notes d-flex">
+            <ul>
+                <li>Spaghetti code</li>
+                <li>import * from Modules</li>
+                <li>export string, function, object</li>
+                <li>one file can export multiple things</li>
+                <li>class is like a blueprint, used to create object (Instance)</li>
+                <li>functions inside a class are called Methods, PascalCase</li>
+                <li>constructor method called automatically with every instantiation</li>
+                <li>context this.name = name</li>
+                <li>the class is same for every instance but context is different for every instance</li>
+            </ul>
+        </div>
+        <div class="col-2"></div>
+    </div>
 </div>
 </body>
 <style>
@@ -90,7 +134,16 @@ ul{
     background-color: var(--theme1-color3);
 }
 li{
-    /* background-color: var(--theme1-color4); */
+    cursor: pointer;
+}
+
+.notes{
+    background-color: var(--theme1-color2);
+    color: var(--theme1-color4);
+    margin-top: 5vh;
+}
+.notes ul{
+    background-color: transparent;
 }
 
 </style>

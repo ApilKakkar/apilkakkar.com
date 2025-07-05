@@ -3,7 +3,7 @@
 # Variables
 IMAGE_NAME="apil-portfolio"
 CONTAINER_NAME="apil-portfolio"
-PORT=80
+PORT=8080
 
 echo "🔧 Pulling latest code from main branch"
 sudo git pull origin main

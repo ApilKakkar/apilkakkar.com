@@ -3,8 +3,14 @@ import './App.css'
 function App() {
   return (
     <>
-      <div>
-        <p className='max-sm:text-[20vw] sm:text-[10vw]'>Awesome things coming soon!</p>
+      <div className='bg-black h-[100vh]'>
+        <p className='max-sm:text-[20vw] sm:text-[10vw] text-white'>
+          Hi, my<br></br>
+          name is Apil.
+        </p>
+        <p className='max-sm:text-[10vw] sm:text-[5vw] text-white'>
+          Awesome things are coming soon.
+        </p>
       </div>
     </>
   )
